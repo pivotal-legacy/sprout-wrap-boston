@@ -33,23 +33,40 @@ recipes:
 # apps (editors)
 - sprout-osx-apps::textmate_preferences
 - sprout-jetbrains-editors::rubymine
+- sprout-jetbrains-editors::intellij
 
 node_attributes:
   sprout:
     git:
-      domain: pivotallabs.com
+      domain: pivotal.io
       authors:
-        - initials: ah
-          name: Abhijit Hiremagalur
-          username: abhi
-        - initials: bc
-          name: Brian Cunnie
-          username: cunnie
-        - initials: jrhb
-          name: Jonathan Barnes
-        - initials: lw
-          name: Luke Winikates
-          username: lwinikates
+        - initials: ay
+          name: Avery Yen
+          username: ayen
+        - initials: bw
+          name: Brian Watkins
+          username: bwatkins
+        - initials: cs
+          name: Colin Shield
+          username: cshield
+        - initials: dc
+          name: Dan Carter
+          username: dcarter
+        - initials: ew
+          name: Evan Wang
+          username: ewang
+        - initials: np
+          name: Nick Pachulski
+          username: npachulski
+        - initials: sh
+          name: Shanfan Huang
+          username: shuang
+        - initials: tk
+          name: Taylor Kearns
+          username: tkearns
+        - initials: tm
+          name: Tyson McNulty
+          username: tmcnulty
       projects:
         -
           name: sprout-wrap
@@ -79,6 +96,7 @@ node_attributes:
       - watch
       - wget
       - rbenv-binstubs
+      - golang
     casks:
       - firefox
       - flycut
@@ -94,3 +112,4 @@ node_attributes:
       - virtualbox
       - xquartz
       - xscope
+      - slack
