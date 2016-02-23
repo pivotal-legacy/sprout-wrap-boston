@@ -23,6 +23,7 @@ recipes:
 - sprout-git::default_editor
 - sprout-git::projects
 - sprout-git::git_scripts
+- sprout-git::git_duet
 
 # development (rails)
 - sprout-rbenv
@@ -34,6 +35,8 @@ recipes:
 - sprout-osx-apps::textmate_preferences
 - sprout-jetbrains-editors::rubymine
 - sprout-jetbrains-editors::intellij
+- sprout-vim::config
+- sprout-vim::tmux
 
 node_attributes:
   sprout:
@@ -58,9 +61,15 @@ node_attributes:
         - initials: np
           name: Nick Pachulski
           username: npachulski
+        - initials: so
+          name: Sean Olszewski
+          username: solszewski
         - initials: sh
           name: Shanfan Huang
           username: shuang
+        - initials: swh
+          name: Simon Holroyd
+          username: sholroyd
         - initials: tk
           name: Taylor Kearns
           username: tkearns
@@ -68,8 +77,7 @@ node_attributes:
           name: Tyson McNulty
           username: tmcnulty
       projects:
-        -
-          name: sprout-wrap
+        - name: sprout-wrap
           url: https://github.com/pivotal-sprout/sprout-wrap.git
     terminal:
       default_profile: 'Pro'
@@ -82,34 +90,42 @@ node_attributes:
       tile_size: 35
       magnification: false
   homebrew:
+    taps:
+      - caskroom/versions
     formulas:
-      - ctags-exuberant
       - ag
       - chromedriver
+      - ctags-exuberant
+      - golang
       - imagemagick
       - node
+      - phantomjs
       - pstree
       - qt
+      - rbenv-binstubs
       - ssh-copy-id
       - tmux
       - tree
       - watch
       - wget
-      - rbenv-binstubs
-      - golang
     casks:
+      - atom
       - firefox
       - flycut
-      - rowanj-gitx
       - github-desktop
       - google-chrome
       - google-drive
       - google-hangouts
+      - istat-menus
+      - java
       - macvim
+      - rowanj-gitx
+      - slack
       - skype
+      - sublime-text3
       - textmate
+      - tunnelblick
       - vagrant
       - virtualbox
       - xquartz
       - xscope
-      - slack
