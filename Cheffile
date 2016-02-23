@@ -40,3 +40,6 @@ cookbook 'sprout-ssh',
 
 cookbook 'sprout-jetbrains-editors',
   :github => 'pivotal-sprout/sprout-jetbrains-editors'
+
+cookbook 'sprout-vim',
+  :github => 'pivotal-sprout/sprout-vim'
