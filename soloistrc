@@ -4,6 +4,7 @@ recipes:
 - sprout-base
 - sprout-base::bash_it
 - homebrew
+- homebrew::install_taps
 - homebrew::install_formulas
 - homebrew::install_casks
 
@@ -29,11 +30,8 @@ recipes:
 - sprout-rbenv
 - sprout-ruby
 - sprout-mysql
-- sprout-postgresql
 
 # apps (editors)
-- sprout-osx-apps::textmate_preferences
-- sprout-jetbrains-editors::rubymine
 - sprout-jetbrains-editors::intellij
 - sprout-vim::config
 - sprout-vim::tmux
@@ -43,42 +41,23 @@ node_attributes:
     git:
       domain: pivotal.io
       authors:
-        - initials: ay
-          name: Avery Yen
-          username: ayen
-        - initials: bw
           name: Brian Watkins
           username: bwatkins
         - initials: cs
           name: Colin Shield
           username: cshield
-        - initials: dc
-          name: Dan Carter
-          username: dcarter
         - initials: ew
           name: Evan Wang
           username: ewang
         - initials: np
           name: Nick Pachulski
           username: npachulski
-        - initials: so
-          name: Sean Olszewski
-          username: solszewski
-        - initials: sh
-          name: Shanfan Huang
-          username: shuang
-        - initials: swh
-          name: Simon Holroyd
-          username: sholroyd
-        - initials: tk
-          name: Taylor Kearns
-          username: tkearns
         - initials: tm
           name: Tyson McNulty
           username: tmcnulty
       projects:
         - name: sprout-wrap
-          url: https://github.com/pivotal-sprout/sprout-wrap.git
+          url: https://github.com/colins/sprout-wrap.git
     terminal:
       default_profile: 'Pro'
     settings:
@@ -91,12 +70,12 @@ node_attributes:
       magnification: false
   homebrew:
     taps:
-      - caskroom/versions
+      - cloudfoundry/tap
     formulas:
-      - ag
+      - ag 
+      - cf-cli
       - chromedriver
       - ctags-exuberant
-      - golang
       - imagemagick
       - node
       - phantomjs
@@ -109,23 +88,13 @@ node_attributes:
       - watch
       - wget
     casks:
-      - atom
+      - docker
       - firefox
       - flycut
-      - github-desktop
       - google-chrome
-      - google-drive
-      - google-hangouts
-      - istat-menus
       - java
-      - macvim
       - rowanj-gitx
-      - slack
-      - skype
-      - sublime-text3
-      - textmate
       - tunnelblick
       - vagrant
       - virtualbox
       - xquartz
-      - xscope
